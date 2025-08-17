@@ -1,13 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int sum = 0,count;
+    char A=0;
+    int ascii=0;
 
-    for (count = 0; count < 10; count++)
+    for( int ascii = 1; ascii <23; ascii++)
     {
-        sum = sum + count;
+        printf("Decimal   Ascii\n");
+        scanf("%d,%3c",&ascii,&A);
     }
-    printf("Enter the number = %d",sum);
 
     return 0;
 }
