@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    char A=0;
-    int ascii=0;
+    char as;
+    int va;
 
-    for( int ascii = 1; ascii <23; ascii++)
-    {
-        printf("Decimal   Ascii\n");
-        scanf("%d,%3c",&ascii,&A);
-    }
+    printf("ASCII   Decimal\n");
+    scanf("%c",&as);
+    va = (int)as;
+    printf("ASCII   Decimal\n");
+    printf("%3c%9d\n",as,va);
 
     return 0;
 }

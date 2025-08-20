@@ -11,7 +11,7 @@ int main()
     }
     while(num != 0);
     {
-        sum -= num;
+        sum += num;
         printf("result : %d\n",sum);
     }
 

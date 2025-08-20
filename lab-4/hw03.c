@@ -3,9 +3,10 @@ int main()
 {
     int i=0;
 
-    for(i=0;i>0;i++);
+    while(i<7)
     {
-        printf("%d\n",i);
+        printf("%d",i--);
     }
     
+    return 0;
 }

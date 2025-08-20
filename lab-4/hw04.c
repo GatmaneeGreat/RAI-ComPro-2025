@@ -1,13 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int num,sum;
+    int num;
 
-    scanf("%d",&num);
-    printf("Multiplication table \n%d",num);
-    for(sum=1; sum<=12; sum++)
+    printf("Multiplication table \n");
+    for(num=1; num<=12; num++)
     {
-        printf("%d * %d = %d\n",num,sum,num*sum);
+        printf("%2d * %-4d = %-6d \n",2,num,2*num);
     }
     return 0;
 }
