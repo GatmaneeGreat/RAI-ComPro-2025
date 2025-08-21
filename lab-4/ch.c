@@ -28,7 +28,7 @@ int main()
                 scanf("%d", &cash);
                 if (cash > 0) 
                 {
-                    balance = balance + cash; // หรือ balance += cash;
+                    balance = balance + cash; // or balance += cash;
                    
                 } else {
                     printf("Invalid amount. Deposit failed.\n");
