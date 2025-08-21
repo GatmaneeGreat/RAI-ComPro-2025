@@ -1,29 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    char ch;
-    int vo=0;
-    int nv=0;
-    
-    printf("Please enter the characters\n");
+    int vowel=0,alphabet=0,count;
+    char letter;
 
-    for(int i = 0;i <= 10;++i)
+    for (count=0; count<10; count++)
     {
-        printf("Character %d:",i + i);
-        scanf(" %c",&ch);
+        printf("\nEnter letter a-z : ");
+        scanf("\n%c",&letter);
 
-        if(ch == 'a',ch == 'e',ch == 'i',ch == 'o',ch == 'u')
-        {
-            vo++;
-        }
-        else{
-            nv++;
-        }
+        if((letter=='a')||(letter=='e')||(letter=='i')||(letter=='o')||(letter=='u'))
+        vowel++;
+    else
+        alphabet++;
     }
-
-    printf("\nAnalysis:\n");
-    printf("Number of vowel: %d\n",vo);
-    printf("Number of vowel not vowel: %d\n",nv);
+    printf("\n***Result***\n");
+    printf("Vowel(a,e,i,o,u) = %d\n",vowel);
+    printf("Other letter     =%d\n",alphabet);
 
     return 0;
 }
