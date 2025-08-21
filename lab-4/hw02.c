@@ -12,7 +12,7 @@ int main()
     while(num != 0);
     {
         sum += num;
-        printf("result : %d\n",sum);
+        printf("result : %d\n",sum+=num);
     }
 
     return 0;
