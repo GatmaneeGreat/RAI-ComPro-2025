@@ -1,30 +1,33 @@
 #include<stdio.h>
 int main()
 {
-    int de,bi[32],hex,sum,i=0,j,n[]={19, 31, 85, 1961, 110, 127, 25, 59};
+    int bi[32];
+    int i=0;
+    int num;
+    printf("Decimal     : ");
+    scanf("%d",&num);
 
-    while(sum > 0)
+    int sum=num;
+    if(sum==0)
     {
-        bi[i] = sum % 2;
-        sum /= 2;
-        i++;
+        printf("Binary : 0");
     }
-    if(i == 0 )
+    else
     {
-        printf("0");
-    }
-    for(int j=i=-1; j>=0; j--)
-    {
-        printf("%d",bi[j]);
-    }
+        while(sum>0)
+        {
+            bi[i]=sum%2;
+            sum=sum/2;
+            i++;
+        }
+        printf("Binary      : ");
 
-    printf("%-10s %-20s %-10s\n", "Decimal", "Binary", "Hexadecimal");
+        for(int j = i - 1; j >= 0; j--)
+        {
+            printf("%d",bi[j]);
+        }
 
-    for(int i=0; i<sum; i++)
-    {
-        printf("%-10d",n[i]);
-        printf("%-20d\n",n[i]);
+        printf("\nHexadecimal : %x\n",num);
     }
-
     return 0;
 }
